@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Tipper: Gallery</title>
+    <link type="text/css" rel="stylesheet" href="./Resources/CSS/reset.css">
+    <link type="text/css" rel="stylesheet" href="./Resources/CSS/style.css">
+
+  </head>
+
+  <body>
+
+    <!-- Full Width Image Feature -->
+    <div class="image-feature">
+      <div class="container">
+        <div class="feature-text">
+          <h3>Simon Tipper: Gallery.</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://c2.staticflickr.com/6/5625/30670131351_609c2b5078_b.jpg">
+      <img src="https://c2.staticflickr.com/6/5625/30670131351_609c2b5078_b.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Obligatory Pic Of Edimburg</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://c1.staticflickr.com/1/371/19207205612_b0d3fc0366_b.jpg">
+      <img src="https://c1.staticflickr.com/1/371/19207205612_b0d3fc0366_b.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Wattemberg Fountain</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://c2.staticflickr.com/4/3878/18862082002_691988a91e_b.jpg">
+      <img src="https://c2.staticflickr.com/4/3878/18862082002_691988a91e_b.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Monky Puzzle</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://c1.staticflickr.com/9/8616/15989368067_885e99a4a4_b.jpg">
+      <img src="https://c1.staticflickr.com/9/8616/15989368067_885e99a4a4_b.jpg " alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Old Factory</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+    <!--Interactive Menu-->
+      <button class="btn btn-6 btn-6c">Back</button>
+
+    <!-- Footer -->
+    <div class="container-footer">
+      <h6>&copy; Simon Tipper Photography.</h6>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+
+    </script>
+  </body>
+
+</html>
